@@ -1,0 +1,15 @@
+@import "./global.css";
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  border: 2px solid black;
+  background-color: rgb(59, 38, 161);
+  color: brown;
+}
+
+.card1 {
+  border: 2px solid brown;
+}
