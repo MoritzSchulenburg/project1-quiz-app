@@ -126,8 +126,9 @@ footer {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
+  opacity: 0.2;
 }
 
-footer__link:hover {
-  transform: scale(1.5);
+footer:hover {
+  opacity: 1;
 }
