@@ -7,7 +7,7 @@
 header {
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: ;
   border: 2px solid black;
   background-color: rgb(34, 80, 6);
   color: rgb(178, 57, 57);
@@ -18,15 +18,20 @@ header {
 }
 
 h1 {
-  margin: 10px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main {
-  padding: 50vh 0;
+  padding: 10vh 0;
   background-color: rgb(126, 139, 113);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -39,6 +44,10 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: rgb(96, 128, 96);
+}
+
+.card:nth-child(1) {
+  margin-top: 80px;
 }
 
 .card__text {
@@ -80,6 +89,26 @@ button:hover {
   padding: 2px;
   background-color: rgb(176, 174, 174);
   list-style: none;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 30vh;
+  flex-direction: row-reverse;
+}
+
+.profile-text {
+  position: relative;
+  width: 60%;
+  flex-direction: column;
+}
+
+.profile-pic h2 {
+  position: relative;
+  margin: 20px;
 }
 
 .Show .question__card__answer {
