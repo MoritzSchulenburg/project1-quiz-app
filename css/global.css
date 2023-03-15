@@ -5,6 +5,8 @@
 }
 
 header {
+  width: 70%;
+  height: 40%;
   border: 2px solid black;
   background-color: rgb(59, 38, 161);
   color: rgb(178, 57, 57);
@@ -17,14 +19,40 @@ header h1 {
   display: flex;
   justify-content: center;
 }
-.card {
+.card__container {
+  display: flex;
+  position: relative;
   width: 70%;
   height: 40vh;
   margin: 3px;
   border: 2px solid brown;
   flex-direction: column;
-  justify-content: column;
+}
+
+button {
+  align-self: center;
   align-items: center;
+}
+
+.card p {
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.card__container__tagbox {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 10px;
+}
+
+.card__container__tagbox li {
+  margin: 3px;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: gray;
+  list-style: none;
 }
 
 .Show .question__card__answer {
