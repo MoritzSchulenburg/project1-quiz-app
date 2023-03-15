@@ -19,7 +19,7 @@ header h1 {
   display: flex;
   justify-content: center;
 }
-.card__container {
+.card {
   display: flex;
   position: relative;
   width: 70%;
@@ -31,7 +31,6 @@ header h1 {
 
 button {
   align-self: center;
-  align-items: center;
 }
 
 .card p {
