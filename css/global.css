@@ -102,8 +102,8 @@ button:hover {
 
 .profile-text {
   position: relative;
-  width: 60%;
   flex-direction: column;
+  align-items: center;
 }
 
 .profile-pic h2 {
