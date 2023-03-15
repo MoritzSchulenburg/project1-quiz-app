@@ -5,37 +5,45 @@
 }
 
 header {
-  width: 70%;
-  height: 40%;
+  width: 100%;
+  height: 10vh;
   border: 2px solid black;
-  background-color: rgb(59, 38, 161);
+  background-color: rgb(34, 80, 6);
   color: rgb(178, 57, 57);
   justify-content: center;
   font-family: fantasy;
 }
 
-header h1 {
-  width: 70%;
+h1 {
+  margin: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .card {
   display: flex;
   position: relative;
   width: 70%;
   height: 40vh;
-  margin: 3px;
+  margin: 30px;
   border: 2px solid brown;
   flex-direction: column;
+  align-items: center;
+}
+
+.card__text {
+  margin: 50px;
 }
 
 button {
   align-self: center;
+  margin: 0px;
 }
 
-.card p {
-  display: inline-block;
-  border: 2px solid black;
+.bookmark {
+  position: absolute;
+  top: -20px;
+  right: 0;
 }
 
 .card__container__tagbox {
@@ -57,4 +65,14 @@ button {
 .Show .question__card__answer {
   display: none;
   visibility: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  border: 2px solid black;
+  background-color: rgb(34, 80, 6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
