@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  height: ;
+  border: 2px solid black;
+  background-color: rgb(34, 80, 6);
+  color: rgb(178, 57, 57);
+  font-family: fantasy;
+  font-size: large;
+  position: fixed;
+  z-index: 1;
+}
+
+h1 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 10vh 0;
+  background-color: rgb(126, 139, 113);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: 40vh;
+  margin: 30px;
+  border: 3px solid brown;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(96, 128, 96);
+}
+
+.card:nth-child(1) {
+  margin-top: 80px;
+}
+
+.card__text {
+  margin: 50px;
+  font-size: larger;
+}
+
+button {
+  align-self: center;
+  margin: 0px;
+  background-color: rgb(176, 174, 174);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.bookmark {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.bookmark:hover {
+  transform: scale(1.1);
+}
+
+.card__container__tagbox {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 10px;
+}
+
+.card__container__tagbox li {
+  margin: 3px;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: rgb(176, 174, 174);
+  list-style: none;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 30vh;
+  flex-direction: row-reverse;
+}
+
+.profile-text {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic h2 {
+  position: relative;
+  margin: 20px;
+}
+
+.Show .question__card__answer {
+  display: none;
+  visibility: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  border: 2px solid black;
+  background-color: rgb(34, 80, 6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+footer:hover {
+  opacity: 1;
+}
