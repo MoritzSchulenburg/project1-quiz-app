@@ -15,7 +15,7 @@ header {
   background-color: var(--secondary-color);
   color: var(--font-color);
   font-family: fantasy;
-  font-size: large;
+  font-size: x-large;
   position: fixed;
   z-index: 1;
 }
@@ -59,7 +59,7 @@ display: none;
 
 .card__text {
   margin: 50px;
-  font-size: larger;
+  font-size: xx-large;
 }
 
 button {
