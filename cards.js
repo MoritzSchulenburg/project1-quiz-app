@@ -15,3 +15,14 @@ document
       }
     });
   });
+
+document.querySelectorAll("section.card").forEach((card) => {
+  let button = card.querySelector(".card__button");
+  let answer = card.querySelector(".Answer");
+  console.log(button);
+  // console.log(bookmarkButton);
+  button.addEventListener("click", () => {
+    // console.log("i was clicked: ", bookmarkButton);
+    answer.classList.toggle("hidden");
+  });
+});

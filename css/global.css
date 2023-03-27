@@ -49,6 +49,9 @@ main {
   align-items: center;
   background-color: var(--secondary-color);
 }
+.Answer.hidden {
+display: none;
+}
 
 .card:nth-child(1) {
   margin-top: 80px;
@@ -110,7 +113,7 @@ button:hover {
   position: relative;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 32%;
 }
 
 .profile-pic h2 {
