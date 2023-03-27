@@ -37,6 +37,13 @@ form.addEventListener("submit", (event) => {
   tagBox.textContent = "Show Answer";
   event.target.reset();
 
+  //   const cardInput = card.value;
+  //   const cardQuestionInput = document.getElementById("question").value;
+  //   const cardShowAnswerInput = document.getElementById("answer").value;
+  //   const cardTagInput = document.getElementById("tag").value;
+
+  //   card.innerHTML.
+
   card.classList.add("card");
   cardtext.classList.add("card__text");
   showAnswer.classList.add("Answer.hidden");
