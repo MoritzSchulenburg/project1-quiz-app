@@ -24,5 +24,11 @@ document.querySelectorAll("section.card").forEach((card) => {
   button.addEventListener("click", () => {
     // console.log("i was clicked: ", bookmarkButton);
     answer.classList.toggle("hidden");
+
+    if (button.textContent === "Show Answer") {
+      button.textContent = "Hide Answer";
+    } else {
+      button.textContent = "Show Answer";
+    }
   });
 });
