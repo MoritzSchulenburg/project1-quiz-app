@@ -1,6 +1,22 @@
 const form = document.querySelector("form");
 const main = document.querySelector("main");
 
+const amountLeft1 = document.getElementById("amountLeft1");
+const amountLeft2 = document.getElementById("amountLeft2");
+
+const inputQuestionValue = document.getElementById("question");
+const inputAnswerValue = document.getElementById("answer");
+
+inputQuestionValue.addEventListener("input", () => {
+  const newLength = inputQuestionValue.value.length;
+  amountLeft1.textContent = 150 - newLength;
+});
+
+inputAnswerValue.addEventListener("input", () => {
+  const newLength = inputAnswerValue.value.length;
+  amountLeft2.textContent = 150 - newLength;
+});
+
 let questionText = "";
 let answerText = "";
 let tagText = "";
@@ -46,9 +62,9 @@ form.addEventListener("submit", (event) => {
 
   card.classList.add("card");
   cardtext.classList.add("card__text");
-  showAnswer.classList.add("Answer.hidden");
+  showAnswer.classList.add("Answer", "hidden");
   tagList.classList.add("card__container__tagbox");
-  tagBox.classList.add("card__container__tagbox li");
+  tagBox.classList.add("card__container__tagbox.li");
   bookmark.classList.add("bookmark");
 
   // // const questionElement = document.querySelector('[data-js="card"]');
@@ -64,24 +80,24 @@ form.addEventListener("submit", (event) => {
   // // questionElement.addEventListener("input", () => {
   // //   updateAmountLeft(maxLength - questionElement.value.length);
   // });
-
-  const questionTextAreaElement = document.querySelector("#question");
-  const answerTextAreaElement = document.querySelector("#answer");
-
-  const questionCharacterElement = document.querySelector("#question-count");
-  const answerCharacterElement = document.querySelector("answer-count");
-
-  const questionTypedCharactersElement = document.querySelector("#current");
-  const answerTypedCharactersElement = document.querySelector("#currentAnswer");
-
-  questionTextAreaElement.addEventListener("input", () => {
-    const questionTypedCharacters = questionTextAreaElement.ariaValueMax.length;
-
-    questionTypedCharactersElement.textContent = questionTypedCharacters;
-  });
-
-  answerTextAreaElement.addEventListener("input", () => {
-    const answerTypedCharacters = answerTextAreaElement.ariaValueMax.length;
-    answerTypedCharactersElement.textContent = answerTypedCharacters;
-  });
 });
+
+//   const questionTextAreaElement = document.querySelector("#question");
+//   const answerTextAreaElement = document.querySelector("#answer");
+
+//   const questionCharacterElement = document.querySelector("#question-count");
+//   const answerCharacterElement = document.querySelector("answer-count");
+
+//   const questionTypedCharactersElement = document.querySelector("#current");
+//   const answerTypedCharactersElement = document.querySelector("#currentAnswer");
+
+//   questionTextAreaElement.addEventListener("input", () => {
+//     const questionTypedCharacters = questionTextAreaElement.ariaValueMax.length;
+
+//     questionTypedCharactersElement.textContent = questionTypedCharacters;
+//   });
+
+//   answerTextAreaElement.addEventListener("input", () => {
+//     const answerTypedCharacters = answerTextAreaElement.ariaValueMax.length;
+//     answerTypedCharactersElement.textContent = answerTypedCharacters;
+//   });
