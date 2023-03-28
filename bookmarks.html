@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Document</title>
+    <script src="./cards.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,16 +15,18 @@
     </header>
     <main>
       <section class="card">
-        <p class="card__text">what propert flips the axes in flexbox?</p>
+        <p class="card__text">what property flips the axes in flexbox?</p>
         <button class="card__button">Show Answer</button>
+        <p class="Answer hidden">this is the correct Answer</p>
         <ul class="card__container__tagbox">
           <li>#html</li>
           <li>#flexbox</li>
           <li>#css</li>
         </ul>
-        <div class="bookmark">
+
+        <button class="bookmark selected" data-js="bookmark-button">
           <img src=".//assets/bookmark_filled.png" width="50px" alt="" />
-        </div>
+        </button>
       </section>
     </main>
     <footer>
@@ -40,6 +43,9 @@
           width="50px
         "
           alt="bookmark-button"
+      /></a>
+      <a href="form.html" class="footer__link">
+        <img src="./assets/question.png" alt="question-button" width="50px"
       /></a>
       <a href="profile.html" class="footer__link"
         ><img
