@@ -10,7 +10,7 @@
 header {
   top: 0;
   width: 100%;
-  height: ;
+  /* height: ; */
   border: 2px solid black;
   background-color: var(--secondary-color);
   color: var(--font-color);
@@ -50,7 +50,7 @@ main {
   background-color: var(--secondary-color);
 }
 .Answer.hidden {
-display: none;
+  display: none;
 }
 
 .card:nth-child(1) {
@@ -144,10 +144,10 @@ footer:hover {
 }
 
 #Settings {
-  display:flex;
+  display: flex;
   justify-content: space-around;
- width: 50%;
- margin: 20px;
+  width: 50%;
+  margin: 20px;
 }
 /*Toggle switch css  */
 
@@ -158,7 +158,7 @@ footer:hover {
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -172,8 +172,8 @@ footer:hover {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -184,16 +184,16 @@ footer:hover {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -210,7 +210,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-</style>
+/* </style>
 </head>
-<body>
-
+<body> */

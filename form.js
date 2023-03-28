@@ -21,6 +21,45 @@ let questionText = "";
 let answerText = "";
 let tagText = "";
 
+/* 
+
+<section class="card">
+        <p class="card__text">what property flips the axes in flexbox?</p>
+        <button class="card__button">Show Answer</button>
+        <p class="Answer hidden">this is the correct Answer</p>
+        <ul class="card__container__tagbox">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+        <button class="bookmark" data-js="bookmark-button">
+          <img src="./assets/bookmark.png" width="50px" alt="" />
+        </button>
+      </section>
+
+
+*/
+function cardTitle(title) {
+  const cardtext = document.createElement("p");
+  cardtext.classList.add("card__text");
+  cardtext.textContent = title;
+  return cardtext;
+}
+
+function createCard(title, answer, tags) {
+  const card = document.createElement("section");
+  card.classList.add("card");
+  const cardTitle = cardTitle(title);
+  //Create cardTitle
+  // Create cardButton
+  // Creat Answer
+  // Create tag
+  // Create bookmark
+
+  card.append(cardTitle);
+  main.append(card);
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -33,12 +72,26 @@ form.addEventListener("submit", (event) => {
   answerText = data.answer;
   tagText = data.tag;
 
+  // Creat Card (questionText, answerText, tagText)
+
   const card = document.createElement("section");
+  card.classList.add("card");
+
   const cardtext = document.createElement("p");
-  const bookmark = document.createElement("img");
+  cardtext.classList.add("card__text");
+  cardtext.textContent = questionText;
+
   const showAnswer = document.createElement("p");
+  showAnswer.classList.add("Answer", "hidden");
+  showAnswer.textContent = answerText;
+
   const tagBox = document.createElement("ul");
+  tagBox.classList.add("card__container__tagbox");
+
   const tagList = document.createElement("li");
+
+  const bookmark = document.createElement("img");
+  bookmark.classList.add("bookmark");
 
   main.append(card);
   card.append(cardtext);
@@ -47,8 +100,6 @@ form.addEventListener("submit", (event) => {
   card.append(tagBox);
   card.append(tagList);
 
-  cardtext.textContent = questionText;
-  showAnswer.textContent = answerText;
   tagText.textContent = tagText;
   tagBox.textContent = "Show Answer";
   event.target.reset();
@@ -60,12 +111,7 @@ form.addEventListener("submit", (event) => {
 
   //   card.innerHTML.
 
-  card.classList.add("card");
-  cardtext.classList.add("card__text");
-  showAnswer.classList.add("Answer", "hidden");
-  tagList.classList.add("card__container__tagbox");
-  tagBox.classList.add("card__container__tagbox.li");
-  bookmark.classList.add("bookmark");
+  // tagBox.classList.add("card__container__tagbox.li");
 
   // // const questionElement = document.querySelector('[data-js="card"]');
   // // const amountLeft = document.querySelector('[data-js="amountLeft"]');
@@ -81,23 +127,3 @@ form.addEventListener("submit", (event) => {
   // //   updateAmountLeft(maxLength - questionElement.value.length);
   // });
 });
-
-//   const questionTextAreaElement = document.querySelector("#question");
-//   const answerTextAreaElement = document.querySelector("#answer");
-
-//   const questionCharacterElement = document.querySelector("#question-count");
-//   const answerCharacterElement = document.querySelector("answer-count");
-
-//   const questionTypedCharactersElement = document.querySelector("#current");
-//   const answerTypedCharactersElement = document.querySelector("#currentAnswer");
-
-//   questionTextAreaElement.addEventListener("input", () => {
-//     const questionTypedCharacters = questionTextAreaElement.ariaValueMax.length;
-
-//     questionTypedCharactersElement.textContent = questionTypedCharacters;
-//   });
-
-//   answerTextAreaElement.addEventListener("input", () => {
-//     const answerTypedCharacters = answerTextAreaElement.ariaValueMax.length;
-//     answerTypedCharactersElement.textContent = answerTypedCharacters;
-//   });
